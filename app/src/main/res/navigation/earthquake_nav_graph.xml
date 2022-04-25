@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/earthquake_nav_graph"
+    app:startDestination="@id/earthquakeListFragment">
+
+    <fragment
+        android:id="@+id/earthquakeListFragment"
+        android:name="com.oliver.earthquake.ui.earthquakelist.EarthquakeListFragment"
+        android:label="EarthquakeListFragment">
+        <action
+            android:id="@+id/action_earthquakeListFragment_to_earthquakeDetailsFragment"
+            app:destination="@id/earthquakeDetailsFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/earthquakeDetailsFragment"
+        android:name="com.oliver.earthquake.ui.earthquakedetails.EarthquakeDetailsFragment"
+        android:label="EarthquakeDetailsFragment">
+        <argument
+            android:name="args_earthquake_item"
+            app:argType="com.oliver.earthquake.data.model.EarthquakeItem" />
+    </fragment>
+</navigation>

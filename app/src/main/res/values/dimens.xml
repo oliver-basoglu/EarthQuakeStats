@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_earthquake_item_card">4dp</dimen>
+    <dimen name="earthquake_item_margin_top">18dp</dimen>
+</resources>

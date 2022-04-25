@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Earth Quake</string>
+    <string name="lat_lng">lat&amp;lng: </string>
+    <string name="api_loading_failed">failed to fetch the data</string>
+    <string name="data_loading_message">data is loading</string>
+    <string name="earthquake_label_date">Date:</string>
+    <string name="earthquake_label_depth">Depth:</string>
+    <string name="earthquake_label_lat_long">Lat&amp;Long></string>
+    <string name="earthquake_label_magnitude">Magnitude: </string>
+    <string name="label_source">Source:</string>
 </resources>

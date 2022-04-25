@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/map_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/label_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/earthquake_item_margin_top"
+            android:layout_marginEnd="4dp"
+            android:text="@string/earthquake_label_date"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@id/guideline2_vertical"
+            app:layout_constraintTop_toBottomOf="@id/map_location" />
+
+        <TextView
+            android:id="@+id/label_depth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/earthquake_item_margin_top"
+            android:text="@string/earthquake_label_depth"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@id/guideline2_vertical"
+            app:layout_constraintTop_toBottomOf="@id/label_date" />
+
+        <TextView
+            android:id="@+id/label_lat_long"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/earthquake_item_margin_top"
+            android:text="@string/earthquake_label_lat_long"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@id/guideline2_vertical"
+            app:layout_constraintTop_toBottomOf="@id/label_depth" />
+
+        <TextView
+            android:id="@+id/label_source"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/earthquake_item_margin_top"
+            android:layout_marginEnd="4dp"
+            android:text="@string/label_source"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@id/guideline2_vertical"
+            app:layout_constraintTop_toBottomOf="@id/label_lat_long" />
+
+        <TextView
+            android:id="@+id/label_magnitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/earthquake_item_margin_top"
+            android:layout_marginEnd="4dp"
+            android:text="@string/earthquake_label_magnitude"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@id/guideline2_vertical"
+            app:layout_constraintTop_toBottomOf="@id/label_source" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline2_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.3" />
+
+        <TextView
+            android:id="@+id/text_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            app:layout_constraintBottom_toBottomOf="@id/label_date"
+            app:layout_constraintStart_toStartOf="@id/guideline2_vertical"
+            app:layout_constraintTop_toTopOf="@id/label_date"
+            tools:text="2011-03-11 04:46:23" />
+
+        <TextView
+            android:id="@+id/text_depth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            app:layout_constraintStart_toStartOf="@id/guideline2_vertical"
+            app:layout_constraintTop_toBottomOf="@id/label_depth"
+            app:layout_constraintTop_toTopOf="@id/label_depth"
+            tools:text="24.4" />
+
+        <TextView
+            android:id="@+id/text_lat_long"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            app:layout_constraintBottom_toBottomOf="@id/label_lat_long"
+            app:layout_constraintStart_toStartOf="@id/guideline2_vertical"
+            app:layout_constraintTop_toTopOf="@id/label_lat_long"
+            tools:text="38.322 , 142.369" />
+
+        <TextView
+            android:id="@+id/text_source"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            app:layout_constraintStart_toStartOf="@id/guideline2_vertical"
+            app:layout_constraintTop_toBottomOf="@id/label_source"
+            app:layout_constraintTop_toTopOf="@id/label_source"
+            tools:text="24.4" />
+
+        <TextView
+            android:id="@+id/text_magnitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            app:layout_constraintStart_toStartOf="@id/guideline2_vertical"
+            app:layout_constraintTop_toBottomOf="@id/label_magnitude"
+            app:layout_constraintTop_toTopOf="@id/label_magnitude"
+            tools:text="24.4" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
